@@ -12,9 +12,13 @@ var listItems = document.querySelectorAll("#items li");
 for (var i = 0; i < listItems.length; i++) {
   listItems[i].style.fontWeight = "bold";
 }
-const newItem = document.createElement('li');
-newItem.textContent = 'New Item';
-newItem.classList.add('list-group-item-new'); // add a new class to the element
-document.getElementById('items').appendChild(newItem);
+//const newItem = document.createElement('li');
+//newItem.textContent = 'New Item';
+//newItem.classList.add('list-group-item-new'); // add a new class to the element
+//document.getElementById('items').appendChild(newItem);
 const newItem = document.getElementsByClassName('list-group-item-new')[0];
 newItem.style.backgroundColor = 'green';
+var items = document.getElementById('items').getElementsByTagName('li');
+items[1].style.backgroundColor = 'green';
+var items = document.getElementById('items').getElementsByTagName('li');
+items[2].style.display = 'none';
